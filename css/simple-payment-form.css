@@ -1,0 +1,75 @@
+.link-back {
+  text-decoration: none;
+  color: white;
+}
+
+.form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.form__item {
+  display: block;
+}
+
+.form__item:focus {
+  outline-color: rgb(65, 118, 168);
+}
+
+.form__item-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 10px;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 25px 0;
+}
+
+.form__item_el_number-card {
+  margin-bottom: 10px;
+}
+
+.form__item_el_card-validity-period {
+  width: 70px;
+}
+
+.form__item_el_card-security-code {
+  width: 70px;
+}
+
+.form__hint {
+  position: relative;
+}
+
+.form__hint:hover::after {
+  content: attr(data-title);
+  position: absolute; 
+  left: 140%; 
+  top: 30%; 
+  z-index: 1;
+  width: 100px;
+  background: rgba(59, 59, 59, .7); 
+  font-size: 12px; 
+  padding: 5px 15px; 
+  cursor: pointer;
+}
+
+.form__item_el_save-card {
+  display: inline;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.form__button {
+  background-color: rgb(65, 118, 168);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.form__button:hover {
+  cursor: pointer;
+}

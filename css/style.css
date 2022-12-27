@@ -1,0 +1,25 @@
+.page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+.page__container {
+  min-width: 1280px;
+  max-width: 1440px;
+  height: 100vh;
+  padding: 30px;
+}
+
+.page__title {
+  margin: 0 0 25px;
+  text-align: center;
+}
+
+.link {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+

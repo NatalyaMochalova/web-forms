@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../vendor/normalize.css">
+  <link rel="stylesheet" href="../css/simple-payment-form.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Простая платежная форма</title>
+</head>
+<body class="page">
+  <div class="page__container"> 
+    <h1 class=" page__title title"><a class="page__link-back link-back" href="index.html" title="Вернуться на главную">&larr; </a>Простая платежная форма</h1>
+    <form class="form" id="simple-payment-form">
+      <label class="form__label" for="email">Почта
+        <input class="form__item form__item_el_email" type="email" name="email" id="email" placeholder="hello@example.com" required>
+      </label>
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="number-card">Номер карты
+          <input class="form__item form__item_el_number-card" type="text" name="number-card" id="number-card" placeholder="XXXX XXXX XXXX XXXX" required>
+        </label>
+        <div class="form__item-container">
+          <label class="form__label" for="card-validity-period">Срок действия
+            <input class="form__item form__item_el_card-validity-period" type="text" name="card-validity-period" id="card-validity-period" placeholder="MM/YY" required>
+          </label>
+          <label class="form__label" for="card-security-code">CVC <span class="form__hint" data-title="Три цифры, которые находятся на обороте карты">&quest;</span>
+            <input class="form__item form__item_el_card-security-code" type="text" name="card-security-code" id="card-security-code" placeholder="123" required>
+          </label>
+        </div>
+        <label class="form__label" for="card-holder">Имя держателя карты
+          <input class="form__item form__item_el_card-holder" type="text" name="card-holder" id="card-holder" placeholder="NATALYA MOCHALOVA" required>
+        </label>
+      </fieldset>
+      <input class="form__item form__item_el_save-card" type="checkbox" name="save-card" id="save-card" checked>
+      <label class="form__label" for="save-card">Сохранить мою карту для будущих покупок</label>
+      <button class="form__button" type="button">Заплатить сейчас</button>
+    </form>
+  </div>
+</body>
+</html>
